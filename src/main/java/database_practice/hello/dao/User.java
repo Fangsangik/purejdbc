@@ -5,8 +5,6 @@ import lombok.Getter;
 
 import java.util.Objects;
 
-@Getter
-
 public class User {
     private final String userId;
     private final String password;
@@ -31,5 +29,21 @@ public class User {
     @Override
     public int hashCode() {
         return Objects.hash(userId, password, name, email);
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
     }
 }
